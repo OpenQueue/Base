@@ -19,11 +19,11 @@ from .tables import (
 from .resources import Sessions
 
 if TYPE_CHECKING:
-    from . import SkrimBase
+    from . import OpenQueue
 
 
 class Login:
-    def __init__(self, upper: "SkrimBase", email: str, password: str) -> None:
+    def __init__(self, upper: "OpenQueue", email: str, password: str) -> None:
         self.upper = upper
         self.email = email
         self.password = password

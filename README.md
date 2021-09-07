@@ -7,7 +7,7 @@ OpenQueue is a experimental CS: GO match system written in asyncio python.
 - Support other hosts then dathost
 - Move to a open source licence
 - Finish docs
-- Make `./SkrimBase/queue` less messy
+- Make `./OpenQueue/queue` less messy
 - Rework integration?
 
 ## Building documentation

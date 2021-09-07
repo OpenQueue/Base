@@ -46,16 +46,16 @@ from .settings.dathost import DathostSettings
 from .decorators import validate_region, validate_tickrate
 
 if TYPE_CHECKING:
-    from . import SkrimBase
+    from . import OpenQueue
 
 
 class User:
-    def __init__(self, upper: "SkrimBase",  user_id: str) -> None:
+    def __init__(self, upper: "OpenQueue",  user_id: str) -> None:
         """Used to interact with user.
 
         Parameters
         ----------
-        upper: SkrimBase
+        upper: OpenQueue
         user_id : str
         """
 
@@ -179,12 +179,12 @@ class User:
             await Sessions.scheduler.spawn(
                 send_email(
                     to=email,
-                    subject="Skrim.gg | Please confirm your email!",
-                    header="Welcome to Skrim.gg, {}!".format(name),
-                    body="""Thanks for joining Skrim.gg!
+                    subject="OpenQueue | Please confirm your email!",
+                    header="Welcome to OpenQueue, {}!".format(name),
+                    body="""Thanks for joining OpenQueue!
                     Please click the button to confirm your email.
 
-                    If you didn't sign up to Skrim.gg, please
+                    If you didn't sign up to OpenQueue, please
                     ignore this email.""",
                     button="Confirm my email",
                     url=Config.smtp.confirmation + values["email_code"]

@@ -22,13 +22,13 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'SkrimBase'
+project = 'OpenQueue'
 copyright = '2021, WardPearce'
 author = 'WardPearce'
 
 # The full version, including alpha/beta/rc tags
 version = ''
-with open('../SkrimBase/__init__.py') as f:
+with open('../OpenQueue/__init__.py') as f:
     version = re.search(
         r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE
     ).group(1)
@@ -85,7 +85,7 @@ html_sidebars = {
 html_theme_options = {
 
     # Set the name of the project to appear in the navigation.
-    'nav_title': 'Skrim.gg Base',
+    'nav_title': 'OpenQueue',
 
     'logo_icon': '&#xe869',
 
@@ -94,8 +94,8 @@ html_theme_options = {
     'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
-    'repo_url': 'https://github.com/SkrimGG/Base',
-    'repo_name': 'SkrimBase',
+    'repo_url': 'https://github.com/OpenQueue/Base',
+    'repo_name': 'OpenQueue',
 
     # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 3,

@@ -5,65 +5,65 @@ Upload
 ------
 B2Settings
 ~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.upload.B2Settings
+.. autoclass:: OpenQueue.settings.upload.B2Settings
     :members:
 
 DemoSettings
 ~~~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.upload.DemoSettings
+.. autoclass:: OpenQueue.settings.upload.DemoSettings
     :members:
 
 PfpSettings
 ~~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.upload.PfpSettings
+.. autoclass:: OpenQueue.settings.upload.PfpSettings
     :members:
 
 Webhook
 -------
 WebhookSettings
 ~~~~~~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.webhook.WebhookSettings
+.. autoclass:: OpenQueue.settings.webhook.WebhookSettings
     :members:
 
 Match
 -----
 MatchSettings
 ~~~~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.match.MatchSettings
+.. autoclass:: OpenQueue.settings.match.MatchSettings
     :members:
 
 CaptainSettings
 ^^^^^^^^^^^^^^^
-.. autoclass:: SkrimBase.settings.match.CaptainSettings()
+.. autoclass:: OpenQueue.settings.match.CaptainSettings()
     :members:
 
 PlayerSettings
 ^^^^^^^^^^^^^^
-.. autoclass:: SkrimBase.settings.match.PlayerSettings()
+.. autoclass:: OpenQueue.settings.match.PlayerSettings()
     :members:
 
 MapSettings
 ^^^^^^^^^^^
-.. autoclass:: SkrimBase.settings.match.MapSettings()
+.. autoclass:: OpenQueue.settings.match.MapSettings()
     :members:
 
 Steam
 -----
 SteamSettings
 ~~~~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.steam.SteamSettings
+.. autoclass:: OpenQueue.settings.steam.SteamSettings
     :members:
 
 Dathost
 -------
 DathostSettings
 ~~~~~~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.dathost.DathostSettings
+.. autoclass:: OpenQueue.settings.dathost.DathostSettings
     :members:
 
 Ban
 ---
 BanSettings
 ~~~~~~~~~~~
-.. autoclass:: SkrimBase.settings.ban.BanSettings
+.. autoclass:: OpenQueue.settings.ban.BanSettings
     :members:

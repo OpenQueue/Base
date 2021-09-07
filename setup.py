@@ -12,7 +12,7 @@ def get_requirements() -> list:
 
 
 def get_variable(variable) -> str:
-    with open(os.path.join("SkrimBase", "__init__.py")) as f:
+    with open(os.path.join("OpenQueue", "__init__.py")) as f:
         return re.search(
             "{} = ['\"]([^'\"]+)['\"]".format(variable), f.read()
         ).group(1)
@@ -24,7 +24,7 @@ def get_long_description() -> str:
 
 
 setup(
-    name="SkrimBase",
+    name="OpenQueue",
     version=get_variable("__version__"),
     url=get_variable("__url__"),
     description=get_variable("__description__"),
@@ -35,12 +35,12 @@ setup(
     install_requires=get_requirements(),
     license=get_variable("__license__"),
     packages=[
-        "SkrimBase",
-        "SkrimBase.league",
-        "SkrimBase.queue",
-        "SkrimBase.models",
-        "SkrimBase.settings",
-        "SkrimBase.tests"
+        "OpenQueue",
+        "OpenQueue.league",
+        "OpenQueue.queue",
+        "OpenQueue.models",
+        "OpenQueue.settings",
+        "OpenQueue.tests"
     ],
     python_requires=">=3.6",
     include_package_data=True,

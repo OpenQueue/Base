@@ -63,7 +63,7 @@ __author_email__ = "wardpearce@protonmail.com"
 __license__ = "Copyright WardPearce 2020 - 2021"
 
 
-class SkrimBase:
+class OpenQueue:
     def __init__(self, database_settings: DatabaseSettings,
                  b2_settings: B2Settings,
                  dathost_settings: DathostSettings,
@@ -100,7 +100,7 @@ class SkrimBase:
         """
 
         # Sessions should never be created here
-        # Use SkrimBase.startup, its important
+        # Use OpenQueue.startup, its important
         # sessions are created within the correct
         # loop context.
 

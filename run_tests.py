@@ -4,7 +4,7 @@ import unittest
 import sys
 
 # Ignore wildcard imports for unit tests.
-from SkrimBase.tests import *  # noqa: F401, F403
+from OpenQueue.tests import *  # noqa: F401, F403
 
 """NOTE
 Expects database to be empty!

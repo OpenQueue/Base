@@ -1,6 +1,6 @@
 import asynctest
 
-from .. import SkrimBase
+from .. import OpenQueue
 
 from ..settings.database import DatabaseSettings
 from ..settings.upload import B2Settings
@@ -23,12 +23,12 @@ from .shared_vars import (
 
 
 class TestBase(asynctest.TestCase):
-    skrim: SkrimBase
+    skrim: OpenQueue
 
     use_default_loop = True
 
     async def setUp(self) -> None:
-        self.skrim = SkrimBase(
+        self.skrim = OpenQueue(
             database_settings=DatabaseSettings(**DATABASE),
             b2_settings=B2Settings(**BACKBLAZE),
             dathost_settings=DathostSettings(**DATHOST),

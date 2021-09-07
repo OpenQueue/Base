@@ -4,7 +4,7 @@
 from typing import Any, List
 
 
-class SkrimBaseException(Exception):
+class OpenQueueException(Exception):
     """Base exception for Nexus League.
     """
 
@@ -17,7 +17,7 @@ class SkrimBaseException(Exception):
         super().__init__(*args)
 
 
-class UserTaken(SkrimBaseException):
+class UserTaken(OpenQueueException):
     """Raised when a user ID is taken.
     """
 
@@ -26,7 +26,7 @@ class UserTaken(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class InvalidUser(SkrimBaseException):
+class InvalidUser(OpenQueueException):
     """Raised when User ID is invalid.
     """
 
@@ -36,7 +36,7 @@ class InvalidUser(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class CaptainsNotInTeam(SkrimBaseException):
+class CaptainsNotInTeam(OpenQueueException):
     """Raised when given captain not in team.
     """
 
@@ -45,7 +45,7 @@ class CaptainsNotInTeam(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class LeagueTaken(SkrimBaseException):
+class LeagueTaken(OpenQueueException):
     """Raised when league is taken.
     """
 
@@ -54,7 +54,7 @@ class LeagueTaken(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class LeagueInvalid(SkrimBaseException):
+class LeagueInvalid(OpenQueueException):
     """Raised when a league ID is invalid.
     """
 
@@ -63,7 +63,7 @@ class LeagueInvalid(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class InvalidRegion(SkrimBaseException):
+class InvalidRegion(OpenQueueException):
     """Raised when region is incorrect.
     """
 
@@ -72,7 +72,7 @@ class InvalidRegion(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class InvalidMatchID(SkrimBaseException):
+class InvalidMatchID(OpenQueueException):
     """Raised when match ID is invalid.
     """
 
@@ -81,7 +81,7 @@ class InvalidMatchID(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class MatchAlreadyEnded(SkrimBaseException):
+class MatchAlreadyEnded(OpenQueueException):
     """Raised when match already ended.
     """
 
@@ -90,7 +90,7 @@ class MatchAlreadyEnded(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class InvalidBan(SkrimBaseException):
+class InvalidBan(OpenQueueException):
     """Raised when ban ID is invalid.
     """
 
@@ -99,7 +99,7 @@ class InvalidBan(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class UserAlreadyInQueue(SkrimBaseException):
+class UserAlreadyInQueue(OpenQueueException):
     """Raised when a user is already in queue.
     """
 
@@ -108,7 +108,7 @@ class UserAlreadyInQueue(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class QueueFull(SkrimBaseException):
+class QueueFull(OpenQueueException):
     """Raised when queue is full.
     """
 
@@ -117,7 +117,7 @@ class QueueFull(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class MatchCancelled(SkrimBaseException):
+class MatchCancelled(OpenQueueException):
     """Base for match cancelled.
     """
 
@@ -136,7 +136,7 @@ class UsersBanned(MatchCancelled):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class DemoTickRateAboveGame(SkrimBaseException):
+class DemoTickRateAboveGame(OpenQueueException):
     """Raised when demo tickrate above game tickrate.
     """
 
@@ -145,37 +145,37 @@ class DemoTickRateAboveGame(SkrimBaseException):
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class InvalidTickRate(SkrimBaseException):
+class InvalidTickRate(OpenQueueException):
     def __init__(self, msg: str = "Invalid tickrate provided",
                  status_code: int = 400, *args: object) -> None:
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class NoDemoToAnalyze(SkrimBaseException):
+class NoDemoToAnalyze(OpenQueueException):
     def __init__(self, msg: str = "No demo saved", status_code: int = 400,
                  *args: object) -> None:
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class InvalidPfpUrl(SkrimBaseException):
+class InvalidPfpUrl(OpenQueueException):
     def __init__(self, msg: str = "Invalid pfp url",
                  status_code: int = 400, *args: object) -> None:
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class PlayersNotGiven(SkrimBaseException):
+class PlayersNotGiven(OpenQueueException):
     def __init__(self, msg: str = "Players must be given",
                  status_code: int = 400, *args: object) -> None:
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class ExternalInUse(SkrimBaseException):
+class ExternalInUse(OpenQueueException):
     def __init__(self, msg: str = "External ID in use",
                  status_code: int = 400, *args: object) -> None:
         super().__init__(msg=msg, status_code=status_code, *args)
 
 
-class LoginException(SkrimBaseException):
+class LoginException(OpenQueueException):
     def __init__(self, msg: str = "Login error",
                  status_code: int = 500, *args: object) -> None:
         super().__init__(msg=msg, status_code=status_code, *args)
