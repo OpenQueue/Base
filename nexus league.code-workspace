@@ -1,0 +1,23 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "cSpell.words": [
+            "Skrim",
+            "aiojobs",
+            "aiozip",
+            "ifnull",
+            "iscoroutinefunction",
+            "isouter",
+            "mvps"
+        ],
+        "python.linting.flake8Enabled": true,
+        "python.linting.enabled": true,
+        "extensions.ignoreRecommendations": true,
+        "editor.suggestSelection": "first",
+        "python.languageServer": "Pyright"
+    }
+}
