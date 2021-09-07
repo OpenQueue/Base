@@ -38,7 +38,9 @@ from ..models.integration import IntegrationModel
 
 from ..settings.match import MatchSettings
 
-from ..misc import str_uuid4, get_server
+from ..misc import str_uuid4
+
+from ..server import get_server
 
 
 class League:

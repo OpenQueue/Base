@@ -56,11 +56,11 @@ from .email import send_email
 
 
 __version__ = "0.0.37"
-__url__ = "https://github.com/SkrimGG"
-__description__ = "Core functionality for Skrim."
+__url__ = "https://github.com/OpenQueue"
+__description__ = "Base functionality for OpenQueue."
 __author__ = "WardPearce"
 __author_email__ = "wardpearce@protonmail.com"
-__license__ = "Copyright WardPearce 2020 - 2021"
+__license__ = "AGPL-3.0 License"
 
 
 class OpenQueue:
