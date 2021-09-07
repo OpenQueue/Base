@@ -1,6 +1,9 @@
 # What is OpenQueue
 OpenQueue is a experimental CS: GO match system written in asyncio python.
 
+# Please star!
+This project was a lot of work & still has a lot of work to be done. Please star to show your support.
+
 ## Goals
 - `OpenQueue` rebrand
 - Full unit tests
